@@ -1,4 +1,4 @@
-package com.cg.demo;
+package com.cg.demo.basic;
 
 import java.util.Scanner;
 
