@@ -3,6 +3,8 @@ package com.cg.demo.col;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Stack;
+import java.util.Vector;
 
 public class EmpDemo {
 	
@@ -39,6 +41,15 @@ public class EmpDemo {
 	}
 	
 //	empList.forEach();
+	
+//	empList.add("aaa");
+//	empList.add(delete);
+//	
+//	Stack stack = new Stack();
+//	Vector vector = new Vector (3, 3);
+//	System.out.println(stack.size());
+//	System.out.println(stack.capacity());
+	
 	}
 
 }

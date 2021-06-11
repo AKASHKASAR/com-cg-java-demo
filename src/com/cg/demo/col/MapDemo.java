@@ -1,12 +1,36 @@
 package com.cg.demo.col;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MapDemo {
 	
 	public static void main(String[] args) {
 		
 //		Map<K, V> map = new HashMap<>();
 		
+		Map<Integer, String> map = new HashMap<>();
 		
+		map.put(10, "india");
+		map.put(20, "china");
+		map.put(40, "US");
+		map.put(null, "US");
+		map.put(20, "srilanka");
+		
+		System.out.println(map);
+		System.out.println(map.get(20));
+		
+		Map<String, String> states = new HashMap<>();
+		
+		states.put("TS" , "Telangana");
+		states.put("MH" , "Maharashtra");
+		states.put("KA" , "Karnataka");
+		
+		System.out.println(states);
+	
+	
+	
+	
 	}
 
 }
