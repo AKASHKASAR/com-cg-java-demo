@@ -1,8 +1,9 @@
 package com.cg.demo.multi;
 
-public class ThreadDemo2 extends Thread {
+public class ThreadDemo2 implements Runnable {
 
-	public void printLoop() {
+	void printLoop() {
+
 		for (int i = 1; i <= 10; i++) {
 			try {
 				Thread.sleep(250);
@@ -14,21 +15,21 @@ public class ThreadDemo2 extends Thread {
 		}
 	}
 
-	@Override
 	public void run() {
 		this.printLoop();
 	}
 
 	public static void main(String[] args) {
 
-		ThreadDemo2 obj = new ThreadDemo2();
-		ThreadDemo2 obj2 = new ThreadDemo2();
-		ThreadDemo2 obj3 = new ThreadDemo2();
-//		obj.start();
-//		obj2.start();
-//		obj3.start();
-		obj.printLoop();
-		obj2.printLoop();
-		obj3.printLoop();
+		Thread obj = new Thread((Runnable) new ThreadDemo());
+		Thread obj1 = new Thread((Runnable) new ThreadDemo());
+		Thread obj2 = new Thread((Runnable) new ThreadDemo());
+
+		obj.start();
+		obj1.start();
+		obj2.start();
+//			obj.printLoop();
+//			obj1.printLoop();
+//			obj2.printLoop();
 	}
 }
